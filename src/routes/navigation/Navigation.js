@@ -6,11 +6,11 @@ import { ReactComponent as CrownLogo } from "../../assets/crown.svg";
 import { UserContext } from "../../components/Contexts/UserContext";
 import CartDropdown from "../../components/CartDropdown/CartDropdown";
 import { signOutUser } from "../../utils/firebase/FireBase";
-import { DropdownContext } from "../../components/Contexts/DropdownContext";
+import { CartContext } from "../../components/Contexts/CartContext";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  const { visible } = useContext(DropdownContext);
+  const { visible } = useContext(CartContext);
   console.log(visible);
 
   const signOutHandler = async () => {
