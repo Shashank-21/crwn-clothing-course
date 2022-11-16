@@ -1,6 +1,6 @@
 import React from "react";
 import "./Directory.scss";
-import CategoryItem from "../CategoryItem/CategoryItem";
+import CategoryItem from "../directory-item/DirectoryItem";
 
 const Directory = ({ categories }) => {
   return (

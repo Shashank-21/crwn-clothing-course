@@ -11,7 +11,6 @@ import { CartContext } from "../../components/Contexts/CartContext";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
   const { visible } = useContext(CartContext);
-  console.log(visible);
 
   const signOutHandler = async () => {
     await signOutUser();
