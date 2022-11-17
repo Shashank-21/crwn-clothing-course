@@ -1,4 +1,4 @@
-import "./sign-up.styles.scss";
+import { SignUpContainer } from "./sign-up.styles";
 import React, { useState } from "react";
 import {
   createAuthUserWithEmailAndPassword,
@@ -51,7 +51,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="sign-up-container">
+    <SignUpContainer>
       <h2>I do not have an account</h2>
       <span>Sign up with your email and password</span>
       <form onSubmit={handleSubmit}>
@@ -90,7 +90,7 @@ const SignUp = () => {
         <Button type="submit">Sign up</Button>
       </form>
       {!match ? <p>Passwords Don't match</p> : ""}
-    </div>
+    </SignUpContainer>
   );
 };
 
