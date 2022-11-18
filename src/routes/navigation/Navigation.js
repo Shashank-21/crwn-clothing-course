@@ -15,7 +15,7 @@ import { CartContext } from "../../components/Contexts/CartContext";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  const { visible } = useContext(CartContext);
+  const { isCartOpen } = useContext(CartContext);
 
   const signOutHandler = async () => {
     await signOutUser();
@@ -39,7 +39,7 @@ const Navigation = () => {
           )}
           <CartIcon />
         </NavLinks>
-        {visible && <CartDropdown />}
+        {isCartOpen && <CartDropdown />}
       </NavigationContainer>
       <Outlet />
     </Fragment>
