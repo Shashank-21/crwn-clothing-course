@@ -1,4 +1,4 @@
-import { useDispatch, useSelector, useSelectors } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   selectIsCartOpen,
   selectCartCount,

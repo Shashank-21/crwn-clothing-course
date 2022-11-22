@@ -12,6 +12,7 @@ import {
   onAuthStateChangedListener,
   createUserDocumentFromAuth,
 } from "./utils/firebase/FireBase";
+import Spinner from "./components/spinner/Spinner";
 
 const App = () => {
   const dispatch = useDispatch();
